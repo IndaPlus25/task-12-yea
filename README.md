@@ -1,16 +1,16 @@
 ### Deadline:
-This work should be completed before the exercise on **Friday 4th December**.
+This work should be completed before the exercise on **Friday 10th December**.
 Woohoo! Last assignment of the year :)
 
 ### Instructions
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-20/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-21/course-instructions#assignments).
 
 ### Preparation
 You must read and answer the questions in the OLI material:
 
-- Read [Module 3: Complexity](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=d6b30f08ac1f0888332317c8ded52f20)
-  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht20`
+- Read [Module 3: Complexity](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=4664ba60ac1f08884cf90edb6c834f86)
+  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht21`
 
 You may also want to read the former course text:
 
@@ -125,7 +125,7 @@ n (n + 1) / 2 = Θ(n<sup>3</sup>)
 n (n + 1) / 2 = Ω(n)
 
 ### Exercise 4
-Give a tight O-estimation, as a function of n, of the worst case time
+Give a Θ (big theta) estimation, as a function of n, of the worst case time
 complexity of the following five loops:
 
 ```
