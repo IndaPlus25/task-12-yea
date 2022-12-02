@@ -1,29 +1,48 @@
-### Deadline:
-This work should be completed before the exercise on **Friday 10th December**.
-Woohoo! Last assignment of the year :)
+# Time complexity
+This week the focus is on determining the time complexity of algorithms. This is an important step forward into the theoretical side of computer science as well as having the ability to decide which algorithms are better in terms of their time complexity. Woohoo! Last assignment of the year :)
 
-### Instructions
+### 💀 Deadline
+This work should be completed before the exercise on **Friday 9th December**.
+
+### 👩‍🏫 Instructions
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-21/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-22/course-instructions#assignments).
 
-### Preparation
-You must read and answer the questions in the OLI material:
+### 📝 Preparation
+- Read and answer questions in [Module 3: Complexity](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=8af6319dac1f0888736070c51b55bf2c)
+  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht22`
+- You may also want to read the former course text:
+   - [How to analyze time complexity: Count your steps](https://yourbasic.org/algorithms/time-complexity-explained/)
+   - [Big O notation: definition and examples](https://yourbasic.org/algorithms/big-o-notation-explained/)
 
-- Read [Module 3: Complexity](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=4664ba60ac1f08884cf90edb6c834f86)
-  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht21`
+An important part of each task is testing. We provide an almost complete test suite where relevant and you should use this to test your implementation. We also expect you to complete the test suite where test methods are incomplete. If you need a reminder of running unittests in Java, follow these guides:
 
-You may also want to read the former course text:
+- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-22/course-instructions/blob/master/junit4_12_command_line.md)
+- [Using IntelliJ with JUnit4](https://www.youtube.com/watch?v=HU0Ittkjx4Y)
 
-- [How to analyze time complexity: Count your steps](https://yourbasic.org/algorithms/time-complexity-explained/)
-- [Big O notation: definition and examples](https://yourbasic.org/algorithms/big-o-notation-explained/)
+### ✅ Learning Goals
+* Determine orders of growth of functions
+* Calculate running times in relation to growing problem sizes
+* Establish time complexity of functions
+* Find the basic operation of an iterative algorithm
+* Compare and contrast sorting algorithms in terms of their behaviour
 
-### Github Task: Time Complexity
-Complete all the exercises and do the testing!
+### 🚨 Troubleshooting Guide
+If you have any questions or problems, follow this procedure: <br/>
+
+1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-22/help/issues). Are other students asking about your problem?
+2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-22/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
+3. Ask a TA in person during the [weekly lab](https://queue.csc.kth.se/Queue/INDA). Check your schedule to see when the next lab is.
+
+We encourage you to discuss with your course friends, but **do not share answers**!
+
+### 🏛 Assignment
+Getting a feel for how algorithms respond to growing problem sizes is vital in helping you make better implementation choices. We can start with simple functions and explore what happens as we increase the problem size, in terms of the time taken or the amount of operations. Once we have established the complexity of multiple functions/algorithm, we can order them appropriately.
 
 Please commit any Java code developed to the [`src`](src) folder and any
 written answers to the [`docs`](docs) folder.
 
-### Exercise 1
+#### Exercise 12.1
 To develop a sense of the relationship between problem size and an algorithm's
 order of growth, complete the table of running times below (we shall
 presume that time is the amount of nanoseconds).
@@ -54,7 +73,7 @@ actual symbol, or just write `inf`!
 | 1                 |               |               |               |                  |                  |                  |                  |
 | 10                |               |               |               |                  |                  |                  |                  |
 | 100               |               |               |               |                  |                  |                  |                  |
-| 1000              | 9.966         | 1000          | 9966          | 1e6              | 1e9              | 1e301            | 4e2567           |
+| 1000              | 9.97          | 1000          | 9966          | 1e6              | 1e9              | 1e301            | 4e2567           |
 | 10000             |               |               |               |                  |                  |                  |                  |
 | 100000            |               |               |               |                  |                  |                  |                  |
 | 1000000           |               |               |               |                  |                  |                  |                  |
@@ -64,7 +83,7 @@ example, `factorial(100)` will calculate `100!`, and `log2(1000)` will
 calculate the base `n` logarithm of 1000 (e.g. replace `n` with `2` for
 base 2).
 
-### Exercise 2
+#### Exercise 12.2
 Let T(n) be the time in nanoseconds (1e-9 seconds) to solve a given problem of
 size n with a certain algorithm. As before in [Exercise 1](#exercise-1), assume
 that the computer performs **1 operation per nanosecond**.
@@ -99,7 +118,7 @@ from the 1 hour cell of `logn` if you want the actual symbol, or just write
 > solution is given by typing `n*log2(n) = x, solve for n` into
 > [Wolfram Alpha](https://www.wolframalpha.com) :D.
 
-### Exercise 3
+#### Exercise 12.3.1
 Arrange the functions in the following list in ascending order based on their
 rate of growth. That is, the function f(n) should come before the function g(n)
 in the list if f(n) is O(g(n)).
@@ -114,7 +133,8 @@ f4(n) = n + 100
 
 f5(n) = 2<sup>n</sup>
 
-Which of the following statements are true? Justify your answer.
+#### Exercise 12.3.2
+For each of the statements below, answer whether it is true or false. Give a brief explanation of how you came to this conclusion.
 
 n (n + 1) / 2 = O(n<sup>3</sup>)
 
@@ -124,7 +144,7 @@ n (n + 1) / 2 = Θ(n<sup>3</sup>)
 
 n (n + 1) / 2 = Ω(n)
 
-### Exercise 4
+#### Exercise 12.4
 Give a Θ (big theta) estimation, as a function of n, of the worst case time
 complexity of the following five loops:
 
@@ -157,12 +177,12 @@ Algorithm Loop5(n):
          e = e + j
 ```
 
-### Exercise 5
+#### Exercise 12.5
 Explain why (n+1)<sup>3</sup> is O(n<sup>3</sup>). Use the following
 definition: f(n) is O(g(n)) if there exists positive constants c and
 n<sub>0</sub> such that f(n) &le; c &times; g(n) for all n &ge; n<sub>0</sub>.
 
-### Exercise 6.1
+#### Exercise 12.6.1
 The following algorithm reverses a collection.  Answer the following:
 
 - What is the basic operation for this algorithm?
@@ -179,7 +199,7 @@ Reverse (A):
        A[0] = x
 ```
 
-### Exercise 6.2
+#### Exercise 12.6.2
 Design a linear time O(n) algorithm to reverse a collection and implement two
 versions in Java, the first with arrays and the second with lists.  
 
@@ -195,7 +215,7 @@ instructions on how to test your implementations.
 > reversed _copy_ of the argument, and are _not_ allowed to mutate the
 > argument.
 
-### Exercise 7
+#### Exercise 12.7
 Insertion Sort and Selection Sort have similar worst case runtime complexity
 O(n<sup>2</sup>).  Explain:
 
@@ -218,9 +238,13 @@ fail("Not implemented!");
 
 Remove these and implement the tests!
 
-### Grading Criteria
-Each week we will communicate grading criteria through the [issue
-tracker](../../issues/). Grading criteria set the basic standards for a pass,
-komp or fail, so it is essential you review them each week. These will change
-over time as your skills develop, so make sure you read the grading criteria
-issue carefully and tick off all the requirements.
+If you need a reminder of running unittests in Java, follow these guides:
+- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-22/course-instructions/blob/master/junit4_12_command_line.md)
+- [Using IntelliJ with JUnit4](https://www.youtube.com/watch?v=HU0Ittkjx4Y)
+
+### 🙏 Acknowledgment
+This task was designed by:               <br>
+Simon Larsén                             <br>
+Anton Lyxell                             <br>
+Stefan Nilsson                           <br>
+Ric Glassey                              <br>
