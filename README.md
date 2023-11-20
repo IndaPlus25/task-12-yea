@@ -2,22 +2,21 @@
 This week the focus is on determining the time complexity of algorithms. This is an important step forward into the theoretical side of computer science as well as having the ability to decide which algorithms are better in terms of their time complexity. Woohoo! Last assignment of the year :)
 
 ### 💀 Deadline
-This work should be completed before the exercise on **Friday 9th December**.
+This work should be completed before the exercise on **Friday 8th December**.
 
 ### 👩‍🏫 Instructions
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-22/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-23/course-instructions#assignments).
 
 ### 📝 Preparation
-- Read and answer questions in [Module 3: Complexity](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=8af6319dac1f0888736070c51b55bf2c)
-  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht22`
-- You may also want to read the former course text:
-   - [How to analyze time complexity: Count your steps](https://yourbasic.org/algorithms/time-complexity-explained/)
-   - [Big O notation: definition and examples](https://yourbasic.org/algorithms/big-o-notation-explained/)
+- Read and answer all questions in Module 3: [Complexity](https://qbl.sys.kth.se/sections/dd1338_ht23_algoritmer_och_dat/container/complexity)
+- You can access the OLI material both:
+  - via Canvas (see the [OLI Torus SE](https://canvas.kth.se/courses/42831/external_tools/4248) link in the left menu)
+  - or directly at this [webpage](https://qbl.sys.kth.se/sections/dd1338_ht23_algoritmer_och_dat/container/complexity)
 
 An important part of each task is testing. We provide an almost complete test suite where relevant and you should use this to test your implementation. We also expect you to complete the test suite where test methods are incomplete. If you need a reminder of running unittests in Java, follow these guides:
 
-- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-22/course-instructions/blob/master/junit4_12_command_line.md)
+- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-23/course-instructions/blob/master/junit4_12_command_line.md)
 - [Using IntelliJ with JUnit4](https://www.youtube.com/watch?v=HU0Ittkjx4Y)
 
 ### ✅ Learning Goals
@@ -30,8 +29,8 @@ An important part of each task is testing. We provide an almost complete test su
 ### 🚨 Troubleshooting Guide
 If you have any questions or problems, follow this procedure: <br/>
 
-1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-22/help/issues). Are other students asking about your problem?
-2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-22/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
+1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-23/help/issues). Are other students asking about your problem?
+2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-23/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
 3. Ask a TA in person during the [weekly lab](https://queue.csc.kth.se/Queue/INDA). Check your schedule to see when the next lab is.
 
 We encourage you to discuss with your course friends, but **do not share answers**!
@@ -239,7 +238,7 @@ fail("Not implemented!");
 Remove these and implement the tests!
 
 If you need a reminder of running unittests in Java, follow these guides:
-- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-22/course-instructions/blob/master/junit4_12_command_line.md)
+- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-23/course-instructions/blob/master/junit4_12_command_line.md)
 - [Using IntelliJ with JUnit4](https://www.youtube.com/watch?v=HU0Ittkjx4Y)
 
 ### 🙏 Acknowledgment
