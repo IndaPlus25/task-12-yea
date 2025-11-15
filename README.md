@@ -4,21 +4,21 @@ This week the focus is on determining the time complexity of algorithms. This is
 
 ### 💀 Deadline
 
-This work should be completed before the exercise on **Friday 6th December**.
+This work should be completed before the exercise on **Friday 5 December**.
 
 ### 👩‍🏫 Instructions
 
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-24/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-25/course-instructions#assignments).
 
 ### 📝 Preparation
 
 - Review the [lecture slides](https://docs.google.com/presentation/d/1h30_64jBHo2vuZfSnjyN2uxz3_5_zfuU4usqGFjWfAI/edit#slide=id.p)
-- Read and answer all questions in [Module 3: Complexity](https://qbl.sys.kth.se/sections/dd1338_ht24_algorithms_and_dat/lesson/hyn0i_analysis_of_complexity_wfwr1)
+- Read and answer all questions in [Module 3: Complexity](https://qbl.sys.kth.se/sections/dd1338_algorithms_and_data_str/container/complexity)
 
 An important part of each task is testing. We provide an almost complete test suite where relevant and you should use this to test your implementation. We also expect you to complete the test suite where test methods are incomplete. If you need a reminder of running unittests in Java, follow these guides:
 
-- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-24/course-instructions/blob/master/junit4_12_command_line.md)
+- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-25/course-instructions/blob/master/junit4_12_command_line.md)
 - [Using IntelliJ with JUnit4](https://www.youtube.com/watch?v=HU0Ittkjx4Y)
 - Using VS Code: Install the `Java Test Runner` extension within the app and follow the instructions.
 
@@ -34,11 +34,19 @@ An important part of each task is testing. We provide an almost complete test su
 
 If you have any questions or problems, follow this procedure: <br/>
 
-1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-24/help/issues). Are other students asking about your problem?
-2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-24/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
+1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-25/help/issues). Are other students asking about your problem?
+2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-25/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
 3. Ask a TA in person during the [weekly lab](https://queue.csc.kth.se/Queue/INDA). Check your schedule to see when the next lab is.
 
 We encourage you to discuss with your course friends, **but do not share answers!** Similarily, use of any AI services 🤖 are great to help explain things, **but please do not submit AI-generated solutions** - you must be both responsible for your own solutions and must be able to explain them under examination.
+
+### 🗺️ Make a Plan
+
+- Check your feedback on last week's issue tracker for a review and tips!
+- Open issues for your plan in the [issue tracker](/../../issues).
+- Commit at least once per issue.
+- Reference issues from commit messages using `Fixes #N` to automatically close them.
+- Read more about it [here](https://gits-15.sys.kth.se/inda-25/course-instructions/blob/main/ice-guide.md).
 
 ### 🏛 Assignment
 
@@ -89,6 +97,8 @@ example, `factorial(100)` will calculate `100!`, and `log2(1000)` will
 calculate the base `n` logarithm of 1000 (e.g. replace `n` with `2` for
 base 2).
 
+[Open an issue for Exercise 12.1](../../issues/new?title=Exercise%2012.1%20Running%20Times)
+
 #### Exercise 12.2
 
 Let T(n) be the time in nanoseconds (1e-9 seconds) to solve a given problem of
@@ -125,6 +135,8 @@ from the 1 hour cell of `logn` if you want the actual symbol, or just write
 > solution is given by typing `n*log2(n) = x, solve for n` into
 > [Wolfram Alpha](https://www.wolframalpha.com) :D.
 
+[Open an issue for Exercise 12.2](../../issues/new?title=Exercise%2012.2%20Largest%20n)
+
 #### Exercise 12.3.1
 
 Arrange the functions in the following list in ascending order based on their
@@ -141,6 +153,8 @@ f4(n) = n + 100
 
 f5(n) = 2<sup>n</sup>
 
+[Open an issue for Exercise 12.3.1](../../issues/new?title=Exercise%2012.3.1%20Rate%20of%20Growth)
+
 #### Exercise 12.3.2
 
 For each of the statements below, answer whether it is true or false. Give a brief explanation of how you came to this conclusion.
@@ -152,6 +166,8 @@ n (n + 1) / 2 = O(n<sup>2</sup>)
 n (n + 1) / 2 = Θ(n<sup>3</sup>)
 
 n (n + 1) / 2 = Ω(n)
+
+[Open an issue for Exercise 12.3.2](../../issues/new?title=Exercise%2012.3.2%20True%20or%20False)
 
 #### Exercise 12.4
 
@@ -187,11 +203,15 @@ Algorithm Loop5(n):
          e = e + j
 ```
 
+[Open an issue for Exercise 12.4](../../issues/new?title=Exercise%2012.4%20Loop%20Complexity)
+
 #### Exercise 12.5
 
 Explain why (n+1)<sup>3</sup> is O(n<sup>3</sup>). Use the following
 definition: f(n) is O(g(n)) if there exists positive constants c and
 n<sub>0</sub> such that f(n) &le; c &times; g(n) for all n &ge; n<sub>0</sub>.
+
+[Open an issue for Exercise 12.5](../../issues/new?title=Exercise%2012.5%20Big%20O%20Definition)
 
 #### Exercise 12.6.1
 
@@ -211,6 +231,8 @@ Reverse (A):
        A[0] = x
 ```
 
+[Open an issue for Exercise 12.6.1](../../issues/new?title=Exercise%2012.6.1%20Reverse%20Algorithm)
+
 #### Exercise 12.6.2
 
 Design a linear time O(n) algorithm to reverse a collection and implement two
@@ -228,6 +250,8 @@ instructions on how to test your implementations.
 > reversed _copy_ of the argument, and are _not_ allowed to mutate the
 > argument.
 
+[Open an issue for Exercise 12.6.2](../../issues/new?title=Exercise%2012.6.2%20Reverse%20Implementation)
+
 #### Exercise 12.7
 
 Insertion Sort and Selection Sort have similar worst case runtime complexity
@@ -236,6 +260,8 @@ O(n<sup>2</sup>).  Explain:
 - How they differ in best case (a sorted collection) and mostly sorted case in
   terms of the runtime complexity of each algorithm, and
 - Which should be preferred as a sorting algorithm with justification.
+
+[Open an issue for Exercise 12.7](../../issues/new?title=Exercise%2012.7%20Insertion%20vs%20Selection%20Sort)
 
 ### Testing
 
@@ -255,9 +281,11 @@ Remove these and implement the tests!
 
 If you need a reminder of running unittests in Java, follow these guides:
 
-- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-24/course-instructions/blob/master/junit4_12_command_line.md)
+- [Running JUnit4 from the command line](https://gits-15.sys.kth.se/inda-25/course-instructions/blob/master/junit4_12_command_line.md)
 - [Using IntelliJ with JUnit4](https://www.youtube.com/watch?v=HU0Ittkjx4Y)
 - Using VS Code: Install the `Java Test Runner` extension within the app and follow the instructions.
+
+[Open an issue for Exercise 12 Testing](../../issues/new?title=Exercise%2012%20Testing)
 
 ### 🙏 Acknowledgment
 
